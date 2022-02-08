@@ -1,0 +1,462 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:arial;
+}
+
+/* parte de cima menu e logo*/
+header{
+    height:120px;
+    display:flex;
+    justify-content:center;
+}
+.container{
+    width:990px;
+    display:flex;
+    justify-content:space-between;
+}
+.column{
+    flex-direction:column;
+}
+.logo{
+    display:flex;
+    align-items:center;
+}
+.menu{
+    display:flex;
+    align-items:center;
+}
+
+nav ul,
+nav li{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+nav ul{
+    display:flex;
+}
+nav a{
+    text-decoration:none;
+    color:#5c5c5c;
+    display:block;
+    padding:15px;
+}
+
+nav .active a,
+nav a:hover{
+    background-color:#39aae1;
+    color:white;
+    
+}
+/* parte de cima finalizada*/
+
+/*Banner de baixo*/
+
+#banner{
+    background-image:url('../img/img1.jpg');
+    background-position:center;
+    background-size:cover;
+    height:670px;
+    display:flex;
+    justify-content:center;
+}
+.banner-title{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    justify-content:center;
+}
+.banner-title h1{
+    font-size:70px;
+    color:#fff;
+    font-weight:normal;
+    max-width:350px;
+    text-shadow:0px 1px 0px #555;
+    margin:0;
+    padding:0;
+    margin-bottom:20px;
+}
+.banner-title h2{
+    font-size:22px;
+    color:#fff;
+    font-weight:normal;
+    max-width:350px;
+    text-shadow:0px 1px 0px #555;
+}
+
+.banner-info{
+    height:210px;
+    background-color:violet;
+    display:flex;
+}
+.banner1,
+.banner2,
+.banner3{
+    flex:1;
+    padding:25px;
+}
+.banner1{
+    background-color:#39aae1;
+}
+.banner2{
+    background-color:#0079c7;
+}
+.banner3{
+    background-color:#2b4c99;
+}
+.banner-info-title{
+    color:#fff;
+    font-size:25px;
+    padding-bottom:20px;
+}
+.hours{
+    padding-bottom:10px;
+}
+.banner-info-desc{
+    padding-bottom:20px;
+    font-size:15px;
+    color:#fff;
+}
+.banner-info a{
+    color:white;
+    text-decoration:none;
+    display:inline-block;
+    border:1px solid #fff;
+    padding:5px;
+    font-size:14px;
+}
+
+.horarios{
+    display:flex;
+    border-bottom:1px solid #555;
+    padding-bottom:10px;
+    padding-top:10px;
+    color:white;
+    justify-content:space-between;
+}
+
+/*banner e opções finalizado*/
+
+/* MEIO DA PÁGINA*/
+
+#meio{
+    display:flex;
+    justify-content:center;
+}
+
+#meio section{
+    flex:2;
+}
+#meio aside{
+    flex:1;
+}
+
+.meio-title{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.meio-text{
+    font-size:22px;
+}
+.meio-bar{
+    width:50px;
+    height:3px;
+    background-color:#39a3e1;
+    margin-top:10px;
+}
+/*Artigos do meio*/
+
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+article{
+    flex:1;
+    min-width:300px;
+    margin-right:20px;
+}
+article .article-date-comment{
+    display:flex;
+}
+article .article-date{
+    background-color:#2b4c99;
+    font-size:14px;
+    color:#fff;
+    padding:10px;
+    margin-right:3px;
+}
+article .article-comment{
+    background-color:#39aae1;
+    font-size:14px;
+    color:#fff;
+    padding:10px;
+}
+article .article-doctor-image{
+    margin-top:25px;
+}
+.article-doctor-image img{
+    width:100%;
+    height:auto;
+}
+.article-title{
+    font-size:22px;
+    color:#000;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.article-desc{
+    font-size:14px;
+    color:#5c5c5c;
+    margin-bottom:25px;
+}
+
+/*Conteudo lateral*/
+.blocks{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+.meio-blocks{
+    width:150px;
+    height:150px;
+    background-color:#39aee1;
+    margin-bottom:30px;
+}
+
+.meio-body p{
+    font-size:14px;
+}
+
+.address-section{
+    margin-top:15px;
+    padding-bottom:15px;
+    border-top:1px solid #ccc;
+}
+.address-section img{
+    margin-right:10px;
+}
+.address-info-section{
+    padding-top:15px;
+    padding-bottom:15px;
+    border-bottom:1px solid #ccc;
+    display:flex;
+    align-items:center;
+}
+/*FIM DO MEIO DA PAGINA*/
+
+
+
+/*Footer*/
+
+footer{
+    background-color:#1e1e1e;
+    display:flex;
+    justify-content:center;
+    margin-top:25px;
+}
+.footer-buttons{
+    display:flex;
+    flex:1;
+}
+.fb1, .fb2, .fb3{
+    flex:1;
+    padding:20px;
+    color:#fff;
+}
+.fb1{
+    background-color:#39aae1;
+}
+.fb2{
+    background-color:#0079c7;
+}
+.fb3{
+    background-color:#2b4c99;
+}
+.fb-title{
+    font-size:25px;
+    margin-bottom:15px;
+}
+.fb-desc{
+    font-size:14px;
+}
+.footer-info{
+    display:flex;
+}
+.footer-info-down{
+    flex:1;
+    color:#fff;
+}
+
+
+.aberto{
+    display:block;
+}
+/*address*/
+address, .footer-address-title{
+    line-height:22px;
+    color:#5c5c5c;
+    font-size:14px;
+}
+address a{
+    text-decoration:none;
+    color:#fff;
+}
+.footer-address-title{
+    margin-bottom:20px;
+}
+
+.address-infos{
+    display:flex;
+    justify-content:space-between;
+}
+.footer-body ul,
+.footer-body li{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.footer-body ul{
+    display:flex;
+    
+}
+.footer-body li{
+    margin-right:10px;
+    margin-top:20px;
+}
+
+
+/*footer notices posts and tweets*/
+.footer-post-desc{
+    font-size:14px;
+    color:#fff;
+    margin-bottom:5px;
+}
+.footer-ago{
+    color:#39aae1;
+    font-size:14px;
+}
+.footer-body-notices{
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom:15px;
+}
+.footer-body-notices a{
+    text-decoration:none;
+    color:#fff;
+}
+.footer-tweets-desc{
+    font-size:14px;
+    color:#5c5c5c;
+    margin-bottom:5px;
+}
+
+
+
+
+/*copyright*/
+.footer-final{
+    border-top:1px solid #2c2c2c;
+    color:#5c5c5c;
+    height:40px;
+    line-height:40px;
+    margin-top:30px;
+}
+
+
+
+.menumobile{
+    display:none;
+    height:40px;
+    width:40px;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-right:20px;
+}
+.menu-mobile-line{
+    height:3px;
+    width:100%;
+    background-color:#39aae1;
+    
+}
+/*responsividade 600px*/
+
+
+
+@media (max-width:600px){
+    .banner-title h1{
+        font-size:50px;
+        text-shadow:0px 1px 1px #000;
+    }
+    .banner-title h2{
+        font-size:18px;
+    }
+    .banner-title{
+        margin-left:20px;
+    }
+    .banner-info {
+        flex-direction:column;
+        height:auto;
+    }
+    #banner{
+        height:800px;
+    }
+    .logo{
+        margin-left:20px;
+    }
+    #meio section{
+        padding:20px;
+    }
+
+    #meio aside{
+        padding:20px;
+    }
+    .container{
+        flex-direction:column;
+    }
+
+    
+    .meio-blocks{
+        margin-right:1px;
+    }
+
+    .footer-buttons{
+        flex-direction:column;
+        
+    }
+
+    .footer-info{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    header .container{
+        flex-direction:row;
+    }
+    header{
+        height:auto;
+    }
+    nav ul{
+        flex-direction:column;
+        display:none;
+        position: absolute;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+    }
+    nav a{
+        padding:10px;
+    }
+
+    .menumobile{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+    }
+
+    
+}
+
+
+
